@@ -1,4 +1,5 @@
-## This project has MOVED
+# Introduction
 
-It is now part of the Apache project, and you can find it [here](https://github.com/apache/incubator-storm/tree/master/examples/storm-starter)
+This is fork of original storm-starter to show automated buildes with openshift's origin.
 
+Further details will be available soon.
