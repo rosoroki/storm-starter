@@ -5,3 +5,5 @@ This is fork of original storm-starter to show automated buildes with openshift'
 Further details will be available soon.
 
 That should invoke the polling strategy from jenkins side
+
+And here is one more commit to test triggering
