@@ -335,7 +335,7 @@ function qa {
 	# Clean up previous auxiliary deployment
 	delete_aux_deployment
 	create_aux_deployment
-	sleep 200
+	sleep 100
     #oc delete dc --all
 	
 	#Find the DeploymentConfig to see if this is a new deployment or just needs an update
@@ -350,12 +350,12 @@ function qa {
     #Tag to promote to QA
 	oc tag $FULL_IMAGE_NAME $QA_PROJ_NAME/${IS_NAME}:qa --insecure=true
     
-	sleep 120;
+	#sleep 120;
 	
-	check_deployed_pod
+	#check_deployed_pod
 		
 }
 
 # Uncomment Project you're working with
-dev
-#qa
+#dev
+qa

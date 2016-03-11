@@ -153,7 +153,7 @@ function dev {
 	# Clean up previous auxiliary deployment
 	delete_aux_deployment
 	create_aux_deployment
-	sleep 200
+	sleep 100
 
 	BUILD_CONFIG=`oc get bc | tail -1 | awk '{print $1}'`
 
@@ -249,9 +249,9 @@ function dev {
 	    kill -s TERM $TOP_PID
 	fi
 
-	sleep 120;
+	#sleep 120;
 
-	check_deployed_pod
+	#check_deployed_pod
 	# scale up the test deployment
 	#RC_ID=`oc get rc | tail -1 | awk '{print $1}'`
 
